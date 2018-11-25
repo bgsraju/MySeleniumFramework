@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="BGSR FW" prallel="methods" thread-count="2">
+	<test name="Sample Test">
+		<classes>
+			<class name="test.SampleTest">
+				<methods>
+					<include name="test1"/>
+					<include name="test2"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
