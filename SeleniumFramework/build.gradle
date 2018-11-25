@@ -25,5 +25,17 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+	
+	// TestNG test framework denpendencies
+	testCompile 'org.testng:testng:6.10'
+	
+	//ReportNG dependencies.
+	testCompile 'org.uncommons:reportng:1.1.4'
+	
+	//Selenium dependencies.
+	testCompile 'org.seleniumhq.selenium:selenium-java:3.141.5'
+	
+	//Apache POI dependencies
+	testCompile 'org.apache.poi:poi:4.0.0'
 }
 
