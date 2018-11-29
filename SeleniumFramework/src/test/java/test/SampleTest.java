@@ -13,6 +13,8 @@ public class SampleTest extends BaseTest{
 	WebDriver driver;
 	Login login;
 	
+	
+	
 	@BeforeMethod
 	public void setUp() {
 		driver = initiateDriverIntance("Chrome");
