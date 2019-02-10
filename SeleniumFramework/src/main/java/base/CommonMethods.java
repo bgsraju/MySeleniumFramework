@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 public class CommonMethods {
 	WebDriver driver;
@@ -31,9 +32,9 @@ public class CommonMethods {
 		try {
 			element.sendKeys(text);
 		}catch(NullPointerException npe) {
-			npe.getMessage();
+			Reporter.log(npe.getMessage());
 		}catch(ElementNotVisibleException enve) {
-			enve.getMessage();
+			Reporter.log(enve.getMessage());
 		}
 	}
 	
@@ -46,9 +47,9 @@ public class CommonMethods {
 		try {
 			driver.findElement(element).sendKeys(text);
 		}catch(NullPointerException npe) {
-			npe.getMessage();
+			Reporter.log(npe.getMessage());
 		}catch(ElementNotVisibleException enve) {
-			enve.getMessage();
+			Reporter.log(enve.getMessage());
 		}
 	}
 	
@@ -63,11 +64,11 @@ public class CommonMethods {
 			driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 			element.sendKeys(text);
 		}catch(TimeoutException te) {
-			te.getMessage();
+			Reporter.log(te.getMessage());
 		}catch(NullPointerException npe) {
-			npe.getMessage();
+			Reporter.log(npe.getMessage());
 		}catch(ElementNotVisibleException enve) {
-			enve.getMessage();
+			Reporter.log(enve.getMessage());
 		}
 	}
 	
@@ -83,11 +84,11 @@ public class CommonMethods {
 			driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 			driver.findElement(element).sendKeys(text);
 		}catch(TimeoutException te) {
-			te.getMessage();
+			Reporter.log(te.getMessage());
 		}catch(NullPointerException npe) {
-			npe.getMessage();
+			Reporter.log(npe.getMessage());
 		}catch(ElementNotVisibleException enve) {
-			enve.getMessage();
+			Reporter.log(enve.getMessage());
 		}
 	}
 	
